@@ -1,0 +1,23 @@
+Name,City,State,Latitude,Longitude,Units_Consumed,Consumer_Number,Electricity_Bill,Solar_Panels_Used,Uses_Renewable_Energy
+Andheri Railway Station,Mumbai,Maharashtra,19.1198242,72.846531,401,75,1273.9,TRUE,FALSE
+Aurangabad (MH),Aurangabad,Maharashtra,19.8756639,75.3393162,194,78,616.3,FALSE,FALSE
+Aurangabad Railway Station,Aurangabad,Maharashtra,19.8595589,75.3111453,454,81,1442.27,FALSE,TRUE
+Borivali,Mumbai,Maharashtra,19.238522,72.841903,430,70,1366.03,FALSE,FALSE
+Churchgate,Mumbai,Maharashtra,18.9351176,72.8264378,158,33,501.94,TRUE,TRUE
+Colaba,Mumbai,Maharashtra,18.9103689,72.8197581,327,67,1038.82,FALSE,TRUE
+Fazalpura,Aurangabad,Maharashtra,19.8923158,75.3372095,405,47,1286.61,TRUE,TRUE
+Girgaon,Mumbai,Maharashtra,18.9579877,72.8214399,275,44,873.62,TRUE,TRUE
+High Court Building (Aurangabad),Aurangabad,Maharashtra,19.8761653,75.3433139,321,30,1019.76,TRUE,FALSE
+Jogeshwari East,Mumbai,Maharashtra,19.1364829,72.8525633,311,69,987.99,TRUE,TRUE
+Khar Delivery,Mumbai,Maharashtra,19.0698892,72.8373532,184,28,584.53,FALSE,FALSE
+Lal Baug,Mumbai,Maharashtra,18.9908177,72.8382547,366,54,1162.71,TRUE,FALSE
+Malabar Hill,Mumbai,Maharashtra,18.9540855,72.8004477,236,26,749.73,FALSE,FALSE
+Matunga,Mumbai,Maharashtra,19.0268747,72.8553352,205,29,651.25,FALSE,TRUE
+Medical College (Aurangabad),Aurangabad,Maharashtra,0,0,147,37,466.99,FALSE,TRUE
+Mulund West,Mumbai,Maharashtra,19.1758825,72.9521193,329,68,1045.17,TRUE,FALSE
+Mumbai ,Mumbai,Maharashtra,18.9385352,72.836334,197,55,625.83,FALSE,FALSE
+Mumbai Central,Mumbai,Maharashtra,18.9690247,72.8205292,98,28,311.33,TRUE,TRUE
+Sanpada,Thane,Maharashtra,19.0601115,73.0140591,145,72,460.64,TRUE,TRUE
+Session Court (Aurangabad),Aurangabad,Maharashtra,19.8717058,75.3205691,468,94,1486.75,FALSE,TRUE
+Thane,Thane,Maharashtra,19.2010502,72.9785353,170,77,540.06,FALSE,FALSE
+Trombay,Mumbai,Maharashtra,19.0482616,72.9288426,404,41,1283.43,TRUE,TRUE

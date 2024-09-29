@@ -1,0 +1,269 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: black;
+    height: 70px;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    position: relative;
+    right: 30px;
+    top: 2px;
+    bottom: 0px;
+    font-size: 24px; /* Logo font size */
+    color: #06D001; /* Green logo color */
+    text-decoration: none; /* No underline */
+    font-weight: 900; /* Extra bold */
+}
+
+.navbar-logo img {
+    position: relative;
+    left: 2px;
+    right: 16px;
+    height: 65px; /* Adjust the height of the logo */
+    margin-right: 1px; /* Space between logo and text */
+    vertical-align: middle; /* Align logo with text */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 20px;
+}
+
+.navbar-menu li a {
+    color: #06D001;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 15px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Page padding for content below navbar */
+.post-office-page {
+    padding: 80px 20px 20px;
+}
+
+/* Search box styles */
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 7px;
+    background-color:#295F98;
+    color: white ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background-color: #218838;
+}
+
+/* Table styles *
+.search-results {
+    margin-top: 20px;
+}
+
+.search-results table, .added-post-office-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.search-results th, .search-results td,
+.added-post-office-list th, .added-post-office-list td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.search-results th, .added-post-office-list th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.search-results tr:nth-child(even), .added-post-office-list tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey for even rows */
+
+
+.search-results tr:hover, .added-post-office-list tr:hover {
+    background-color: #f1f1f1; /* Slightly darker grey on hover */
+}
+
+/* Button styles for dynamic actions */
+.alert-button {
+    background-color: #dc3545; /* Red for alert */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.alert-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.all-good-button {
+    background-color:black; /* Green for all good */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.all-good-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.view-image-button {
+    background-color: #007bff; /* Blue for view image */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.view-image-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Messages */
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.alert {
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.all-good {
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .post-office-page {
+        padding: 100px 10px 20px;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .search-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+/* Post office list table */
+.post-office-list,
+.added-post-offices-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.post-office-list th,
+.added-post-offices-list th {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: left;
+}
+
+.post-office-list td,
+.added-post-offices-list td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.added-post-offices {
+    margin-top: 40px;
+}
+
+.added-post-offices h2 {
+    margin-bottom: 10px;
+}
+
+/* Hover and animation effect */
+.post-office-list tr:hover,
+.added-post-offices-list tr:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDDFE0; /* Updated background color */
+}
+
+.navbar {
+    background-color: black; /* Black background */
+    height: 70px; /* Height of the navbar */
+    padding: 10px 40px; /* Padding for navbar */
+    position: fixed; /* Keeps the navbar fixed on the page */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keeps navbar on top of other content */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between items */
+    box-sizing: border-box; /* Ensures padding doesn't increase height */
+}
+
+.navbar-logo {
+    position: relative;
+    bottom: 9px;
+    right: 40px;
+    font-size: 24px; /* Logo font size */
+    color: #06D001; /* Green logo color */
+    text-decoration: none; /* No underline */
+    font-weight: 900; /* Extra bold */
+}
+
+.navbar-logo img {
+    position: relative;
+    bottom: 6px;
+    right: 5px;
+    left: 4px;
+    height: 70px; /* Adjust the height of the logo */
+    margin-right: 2px; /* Space between logo and text */
+    vertical-align: middle; /* Align logo with text */
+}
+
+.navbar-menu {
+    position: relative;
+    bottom: 8px;
+    list-style: none; /* No bullets for the list */
+    display: flex; /* Display items in a row */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+.navbar-menu li {
+    margin: 0 20px; /* Margin between menu items */
+}
+
+.navbar-menu li a {
+    color: #06D001; /* Green text */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Font size */
+    padding: 12px 15px; /* Padding inside each link */
+    display: block; /* Makes the entire area clickable */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition */
+}
+
+.navbar-menu li a:hover {
+    color: #ffcc00; /* Change text color on hover */
+    font-weight: bold; /* Bold text on hover */
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    margin-top: 80px; /* Add space below the navbar */
+}
+
+.alert {
+    position: fixed;
+    top: 80px; /* Position below the navbar */
+    right: 20px; /* Position on the right */
+    background-color: red; /* Alert background color */
+    color: white; /* Alert text color */
+    padding: 10px 20px; /* Alert padding */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 999; /* Ensure it stays above other elements */
+    display: none; /* Hidden by default */
+}
+
+.bold-text {
+    font-weight: bold; /* Bold text style */
+}

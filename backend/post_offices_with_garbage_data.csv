@@ -1,0 +1,24 @@
+Name,City,State,Latitude,Longitude,Garbage_Category,Garbage_Frequency,Average_Time_Between_Detections,Garbage_Detections_Week_1,Garbage_Detections_Week_2,Garbage_Detections_Week_3,Garbage_Detections_Week_4
+Andheri Railway Station,Mumbai,Maharashtra,19.1198242,72.846531,Non-Recyclable,Weekly,10,5,1,5,3
+Aurangabad (MH),Aurangabad,Maharashtra,19.8756639,75.3393162,Recyclable,Weekly,56,6,4,8,4
+Aurangabad Railway Station,Aurangabad,Maharashtra,19.8595589,75.3111453,Hazardous,Daily,27,6,6,2,1
+Borivali,Mumbai,Maharashtra,19.238522,72.841903,Organic,Bi-Weekly,28,3,9,7,7
+Churchgate,Mumbai,Maharashtra,18.9351176,72.8264378,Organic,Daily,11,6,3,6,1
+Colaba,Mumbai,Maharashtra,18.9103689,72.8197581,Hazardous,Weekly,50,2,0,9,10
+Fazalpura,Aurangabad,Maharashtra,19.8923158,75.3372095,Non-Recyclable,Daily,49,3,3,1,8
+Girgaon,Mumbai,Maharashtra,18.9579877,72.8214399,Hazardous,Bi-Weekly,25,4,5,10,4
+High Court Building (Aurangabad),Aurangabad,Maharashtra,19.8761653,75.3433139,Organic,Daily,39,3,1,1,0
+Jogeshwari East,Mumbai,Maharashtra,19.1364829,72.8525633,Non-Recyclable,Daily,44,3,0,7,5
+Khar Delivery,Mumbai,Maharashtra,19.0698892,72.8373532,Recyclable,Weekly,46,3,6,2,5
+Lal Baug,Mumbai,Maharashtra,18.9908177,72.8382547,Hazardous,Daily,5,1,6,10,6
+M.P.T.,Mumbai,0,0,,Recyclable,Daily,53,8,2,8,8
+Malabar Hill,Mumbai,Maharashtra,18.9540855,72.8004477,Hazardous,Bi-Weekly,20,8,7,8,8
+Matunga,Mumbai,Maharashtra,19.0268747,72.8553352,Organic,Daily,6,10,8,1,8
+Medical College (Aurangabad),Aurangabad,Maharashtra,0,0,Recyclable,Weekly,66,6,9,7,6
+Mulund West,Mumbai,Maharashtra,19.1758825,72.9521193,Organic,Weekly,47,8,6,5,2
+Mumbai ,Mumbai,Maharashtra,18.9385352,72.836334,Non-Recyclable,Weekly,54,1,4,7,5
+Mumbai Central,Mumbai,Maharashtra,18.9690247,72.8205292,Non-Recyclable,Weekly,47,7,1,10,7
+Sanpada,Thane,Maharashtra,19.0601115,73.0140591,Non-Recyclable,Bi-Weekly,42,1,5,5,8
+Session Court (Aurangabad),Aurangabad,Maharashtra,19.8717058,75.3205691,Recyclable,Daily,34,3,9,2,10
+Thane,Thane,Maharashtra,19.2010502,72.9785353,Hazardous,Bi-Weekly,38,3,3,7,2
+Trombay,Mumbai,Maharashtra,19.0482616,72.9288426,Hazardous,Bi-Weekly,42,6,6,8,1

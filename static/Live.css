@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #06D001;
+    --hover-color: #ffcc00;
+    --background-color: white;
+    --text-color: #333;
+    --navbar-bg-color: black;
+    --footer-bg-color: black;
+}
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#EDDFE0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+    height: 70px;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    position: relative;
+    right: 30px;
+    top: 2px;
+    font-size: 24px; /* Logo font size */
+    color: var(--primary-color); /* Green logo color */
+    text-decoration: none; /* No underline */
+    font-weight: 900; /* Extra bold */
+}
+
+.navbar-logo img {
+    height: 65px; /* Adjust the height of the logo */
+    margin-right: 1px; /* Space between logo and text */
+    vertical-align: middle; /* Align logo with text */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 20px;
+}
+
+.navbar-menu li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 15px;
+    display: block;
+    font-weight: bold;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: var(--hover-color);
+    font-weight: bold;
+}
+
+/* Search bar */
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input[type="text"] {
+    padding: 15px 25px; /* Increased padding for bigger search bar */
+    width: 350px; /* Width of the search bar */
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 18px; /* Increased font size */
+}
+
+.search-container input[type="text"]:focus {
+    border-color: var(--hover-color);
+}
+
+.search-container button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 18px; /* Increased button font size */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 10px 15px; /* Added padding for larger button */
+}
+
+/* Dropdown styling */
+select {
+    padding: 10px; /* Increased padding for dropdown */
+    border: 2px solid var(--primary-color);
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increased font size */
+    margin-right: 10px; /* Space between dropdown and button */
+}
+
+/* Centering Content */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 90px; /* Added margin to push content below navbar */
+    padding: 20px;
+    height: 100%;
+}
+.margin-top {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Processed image styling */
+#outputImage {
+    max-width: 500px; /* Adjust max width as needed */
+    width: 100%; /* Make the image responsive */
+    border: 2px solid var(--primary-color); /* Optional: add border */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-top: 20px; /* Add spacing above the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 32px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+/* General styles for paragraphs or other content */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: var(--primary-color);
+}
+
+/* Dynamic button styles */
+button {
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    color: #06D001;;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dynamic link styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}

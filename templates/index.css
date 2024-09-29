@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Updated background color */
+}
+
+.navbar {
+    background-color: black; /* Black background */
+    height: 70px; /* Height of the navbar */
+    padding: 10px 40px; /* Padding for navbar */
+    position: fixed; /* Keeps the navbar fixed on the page */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keeps navbar on top of other content */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between items */
+    box-sizing: border-box; /* Ensures padding doesn't increase height */
+}
+
+.navbar-logo {
+    position: relative;
+    right: 40px;
+    font-size: 24px; /* Logo font size */
+    color: #06D001; /* Green logo color */
+    text-decoration: none; /* No underline */
+    font-weight: 900; /* Extra bold */
+}
+.navbar-logo img {
+    position: relative;
+    right: 5px;
+    left: 4px;
+    height: 70px; /* Adjust the height of the logo */
+    margin-right:2px; /* Space between logo and text */
+    vertical-align: middle; /* Align logo with text */
+}
+
+.navbar-menu {
+    list-style: none; /* No bullets for the list */
+    display: flex; /* Display items in a row */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+.navbar-menu li {
+    margin: 0 20px; /* Margin between menu items */
+}
+
+.navbar-menu li a {
+    color: #06D001; /* Green text */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Font size */
+    padding: 12px 15px; /* Padding inside each link */
+    display: block; /* Makes the entire area clickable */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition */
+}
+
+.navbar-menu li a:hover {
+    color: #ffcc00; /* Change text color on hover */
+    font-weight: bold; /* Bold text on hover */
+}
+
+#map {
+    height: 500px; /* Height of the map */
+    width: 100%; /* Full width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    margin-top: 70px; /* Adjusted to match navbar height */
+}
+
+.chart-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between charts */
+    margin: 20px; /* Margin for spacing */
+}
+
+canvas {
+    width: 48%; /* Each chart takes up nearly half the container */
+    height: 450px; /* Increased height for the charts */
+    max-width: 650px; /* Allow for a bit more width on larger screens */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+}
+
+.line-chart-container,
+.bar-chart-container {
+    width: 48%; /* Flex items take 48% of the width for side-by-side alignment */
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Adjust layout for responsiveness */
+    margin: 20px;
+    gap: 20px; /* Add gap between boxes */
+}
+
+.info-box {
+    padding: 20px; /* Increased padding */
+    border: 1px solid #00bcd4; /* Blue border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    flex: 1; /* Make each box flexible */
+    min-width: 150px; /* Minimum width for responsiveness */
+    text-align: center; /* Center text in the boxes */
+    font-weight: bold; /* Bold text in info boxes */
+}
+
+/* Brighter background colors for info boxes */
+.info-box:nth-child(1) {
+    background-color: #00e5ff; /* Bright cyan */
+}
+
+.info-box:nth-child(2) {
+    background-color: #ffea00; /* Bright yellow */
+}
+
+.info-box:nth-child(3) {
+    background-color: #ff5252; /* Bright red */
+}
+
+.info-box:nth-child(4) {
+    background-color: #76ff03; /* Bright green */
+}
+
+.alert {
+    background-color: #ffcccc; /* Light red for ALERT */
+    border: 1px solid red;
+    font-weight: bold; /* Bold text for alert boxes */
+}
+
+/* Post Office Search Bar */
+.search-container {
+    margin: 20px auto; /* Center the search bar horizontally */
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input {
+    width: 300px; /* Width of the search input */
+    padding: 10px;
+    border: 2px solid #06D001; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    outline: none; /* Remove default outline */
+}
+
+.search-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #06D001; /* Green background */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-container button:hover {
+    background-color: #04a300; /* Darker green on hover */
+}
+
+/* Dynamic Cleanliness Ranking Table */
+.cleanliness-ranking {
+    margin: 20px;
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+.cleanliness-ranking th, .cleanliness-ranking td {
+    border: 1px solid #06D001; /* Green border */
+    padding: 12px;
+    text-align: center;
+}
+
+.cleanliness-ranking th {
+    background-color: #06D001; /* Green background for headers */
+    color: white; /* White text in headers */
+    font-weight: bold;
+}
+
+.cleanliness-ranking tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+.cleanliness-ranking tr:hover {
+    background-color: #ddd; /* Slightly darker background on hover */
+}
+
+/* Buttons for adjusting cleanliness level */
+.adjust-cleanliness {
+    padding: 8px 12px;
+    border: none;
+    background-color: #06D001; /* Green background */
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.adjust-cleanliness:hover {
+    background-color: #04a300; /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column; /* Stack charts vertically */
+    }
+    
+    canvas {
+        width: 100%; /* Full width for smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
+        margin-bottom: 20px; /* Margin between stacked charts */
+    }
+
+    .info-boxes {
+        flex-direction: column; /* Stack info boxes vertically */
+        align-items: center; /* Center align */
+    }
+
+    .search-container {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    .search-container input {
+        width: 100%; /* Full width input on smaller screens */
+        margin-bottom: 10px; /* Space below input */
+    }
+
+    .cleanliness-ranking {
+        font-size: 14px; /* Slightly smaller text on smaller screens */
+    }
+}
